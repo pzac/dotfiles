@@ -1,0 +1,22 @@
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[color]
+	diff = auto
+	status = auto
+[user]
+	name = XXXXXXXXXXXXXX
+	email = YYYYYYYYYYYYY
+[push]
+	default = tracking
+[apply]
+	ignorewhitespace = change
+	whitespace = fix
+[branch]
+	autosetuprebase = remote
+[format]
+	pretty = oneline
+[diff]
