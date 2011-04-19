@@ -1,23 +1,31 @@
 [alias]
 	st = status
+	sta = stash
 	ci = commit
-	br = branch
 	co = checkout
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	br = branch
 	rh = reset --hard
-[color]
-	diff = auto
-	status = auto
+	cp = cherry-pick
+	re = rebase
+	me = merge
+	ri = rebase -i
+	pl = pull
+	ps = push
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [user]
-	name = XXXXXXXXXXXXXX
-	email = YYYYYYYYYYYYY
+	name = XXXXX
+	email = YYYYYY
 [push]
 	default = tracking
+[branch]
+	autosetuprebase = always
+[color]
+	status = auto
+	diff = auto
+[format]
+	pretty = oneline
 [apply]
 	ignorewhitespace = change
 	whitespace = fix
-[branch]
-	autosetuprebase = remote
-[format]
-	pretty = oneline
-[diff]
+
+
