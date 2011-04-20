@@ -12,9 +12,10 @@
 	pl = pull
 	ps = push
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	fe = fetch
 [user]
 	name = XXXXX
-	email = YYYYYY
+	email = XXXXX
 [push]
 	default = tracking
 [branch]
