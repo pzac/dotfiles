@@ -51,3 +51,7 @@ def mate(content, filename='debug.txt')
 end
 
 ARGV.concat [ "--readline", "--simple-prompt" ]
+
+def q(x)
+  Current.gql.query(x)
+end
