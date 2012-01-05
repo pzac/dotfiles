@@ -9,3 +9,5 @@ alias c="cd .."
 alias grep="grep --color=auto"
 alias be="bundle exec"
 alias cuc="bundle exec cucumber --require features"
+alias memflush="echo 'flush_all' | nc localhost 11211"
+
