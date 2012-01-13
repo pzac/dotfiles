@@ -1,32 +1,65 @@
 [alias]
-	st = status
-	sta = stash
-	ci = commit
-	co = checkout
-	br = branch
-	rh = reset --hard
-	cp = cherry-pick
-	re = rebase
-	me = merge
-	ri = rebase -i
-	pl = pull
-	ps = push
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	fe = fetch
+  # st = status -sb
+  st = status
+  sta = stash
+  ci = commit
+  co = checkout
+  com = checkout master
+  cos = checkout staging
+  cop = checkout production
+  br = branch
+  rh = reset --hard
+  cp = cherry-pick
+  re = rebase
+  rem = rebase master
+  rep = rebase production
+  res = rebase staging
+  riom = rebase -i origin/master
+  reom = rebase origin/master
+  reop = rebase origin/production
+  reos = rebase origin/staging
+  me = merge
+  ri = rebase -i
+  pl = pull
+  ps = push
+  # hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  h = !git --no-pager log --graph  --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
+  fe = fetch
+  wc = whatchanged
+  wd = diff --word-diff
 [user]
-	name = XXXXX
-	email = XXXXX
 [push]
-	default = tracking
+  default = tracking
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [color]
-	status = auto
-	diff = auto
+  status = auto
+  diff = auto
 [format]
-	pretty = oneline
+  pretty = oneline
 [apply]
-	ignorewhitespace = change
-	whitespace = fix
-
-
+  ignorewhitespace = change
+  whitespace = fix
+[help]
+  # autocorrect = 1
+[merge]
+  tool = opendiff
+[core]
+  quotepath = false
+  excludesfile = /Users/paozac/.gitignore_global
+  whitespace=trailing-space,cr-at-eol
+[heroku]
+  account = personal
+[mergetool]
+  keepBackup = true
+[diff]
+  # external = /Users/paozac/bin/git-diff-cmd.sh
+[advice]
+  pushNonFastForward = false
+  statusHints = false
+  commitBeforeMerge = false
+  resolveConflict = true
+  implicitIdentity = false
+  detachedHead = false
+[help]
+	format = web
