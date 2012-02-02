@@ -1,0 +1,14 @@
+--type-add=ruby=.haml
+--type-add=css=.sass
+--type-add=css=.scss
+--ignore-dir=coverage
+--ignore-dir=cache
+--type-add=js=.coffee
+#--after-context=1
+#--before-context=1
+--type-set=bin=.pdf
+--type-set=bin=.csv
+--nobin
+--nosql
+--type-set=gql=.gql
+--type-set=yml=.yml
