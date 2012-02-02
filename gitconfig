@@ -22,12 +22,15 @@
   ri = rebase -i
   pl = pull
   ps = push
-  # hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   h = !git --no-pager log --graph  --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
+  hh = !git h -20
   fe = fetch
   wc = whatchanged
   wd = diff --word-diff
 [user]
+  name = Paolo Zaccagnini
+  email = paozac@gmail.com
 [push]
   default = tracking
 [branch]
@@ -62,4 +65,4 @@
   implicitIdentity = false
   detachedHead = false
 [help]
-	format = web
+  #format = web

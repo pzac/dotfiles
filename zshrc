@@ -3,7 +3,10 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="kennethreitz"
+#export ZSH_THEME="kennethreitz"
+# export ZSH_THEME="pzac"
+# export ZSH_THEME="sunrise"
+export ZSH_THEME="simple"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -24,5 +27,6 @@ source $HOME/dotfiles/common/env
 
 # Customize to your needs...
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+cdpath=(~/Sites)
 
