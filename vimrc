@@ -41,8 +41,13 @@ set cursorline " highlight current line
 set laststatus=2 " always show the status line
 set t_Co=256 " tell vim explicitly that the terminal has 256 colors
 syntax enable
-colorscheme solarized
-
+if has('gui_running')
+  " colorscheme github
+  " colorscheme solarized
+  colorscheme darkblue2
+else
+  colorscheme solarized
+endif
 " files
 set nobackup
 set noswapfile
@@ -76,3 +81,6 @@ set wildignore+=*.png,*.gif,*.jpg
 " ctrl-l to insert ruby's hash rocket =>
 imap <C-l> <Space>=><Space>
 
+" === custom shortcuts ===
+" show current file in Nerdtree pane
+map <leader>r :NERDTreeFind<cr>
