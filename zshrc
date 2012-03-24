@@ -21,6 +21,7 @@ export ZSH_THEME="simple"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/dotfiles/common/aliases
 source $HOME/dotfiles/common/env

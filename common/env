@@ -1,2 +1,2 @@
 export PATH=/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/PostgreSQL8/bin:/usr/local/mysql/bin:~/bin:$PATH
-export EDITOR="mate -w"
+export EDITOR="vim"

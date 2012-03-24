@@ -1,5 +1,5 @@
 call pathogen#infect()
-call pathogen#helptags()
+"call pathogen#helptags()
 
 " forget legacy mode
 set nocompatible
@@ -34,20 +34,26 @@ let mapleader=","
 
 " interface
 set ruler
-set number " always show line number
+" set relativenumber " show relative line numbers
+set number
 set title  " change terminal title
 set background=light
 set cursorline " highlight current line
+" set colorcolumn=80
 set laststatus=2 " always show the status line
 set t_Co=256 " tell vim explicitly that the terminal has 256 colors
 syntax enable
 if has('gui_running')
   " colorscheme github
   " colorscheme solarized
-  colorscheme darkblue2
+  colorscheme molokai
 else
-  colorscheme solarized
+  colorscheme molokai
 endif
+
+" au InsertEnter * :set nu
+" au InsertLeave * :set rnu
+
 " files
 set nobackup
 set noswapfile
@@ -65,6 +71,10 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" resize panes
+" map <M-<> <C-w><
+" map <M->> <C-w>>
+
 " useful things
 " w!! to force write files that require root permissions
 cmap w!! %!sudo tee > /dev/null %
@@ -74,8 +84,13 @@ autocmd BufWritePre *.rb :%s/\s\+$//e " remove trailing spaces on ruby files
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR> " F5 removes trailing whitespace
 
 " === file ignore settings ===
+set wildignore+=*/.git
 set wildignore+=tmp/**,vendor/*
 set wildignore+=*.png,*.gif,*.jpg
+
+" === filetypes ===
+au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,config.ru}    set ft=ruby
+
 
 " === snippets === 
 " ctrl-l to insert ruby's hash rocket =>
@@ -84,3 +99,41 @@ imap <C-l> <Space>=><Space>
 " === custom shortcuts ===
 " show current file in Nerdtree pane
 map <leader>r :NERDTreeFind<cr>
+map <leader>n :NERDTreeToggle<cr>
+
+" === plugin specific commands ===
+let g:indent_guides_start_level = 2
+" autocmd VimEnter * :IndentGuidesEnable
+
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=0
+let g:syntastic_auto_loc_list=1
+
+map <Leader><Leader> :ZoomWin<CR>
+map <Leader>i :IndentGuidesToggle<CR>
+
+" === auto complete ===
+function! SuperTab()
+  if (strpart(getline('.'),col('.')-2,1)=~'^\W\?$')
+    return "\<Tab>"
+  else
+    return "\<C-n>"
+  endif
+endfunction
+imap <Tab> <C-R>=SuperTab()<CR>
+" enable css colors on sass files
+"autocmd FileType sass,scss,stylus syn cluster sassCssAttributes add=@cssColors
+
+" use ,F to jump to tag in a vertical split
+"nnoremap <Leader>F :let word=expand(""):vsp:wincmd w:exec("tag ". word)
+nnoremap <silent> ,F :let word=expand("<cword>")<CR>:vsp<CR>:wincmd w<cr>:exec("tag ". word)<cr>
+
+
+" use ,gf to go to file in a vertical split
+nnoremap <Leader>gf :vertical botright wincmd f
+
+" shortcut for Ack
+nnoremap <Leader>a :Ack 
+
+" mouse scroll support
+set mouse=a

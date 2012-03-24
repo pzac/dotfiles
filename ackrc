@@ -12,3 +12,5 @@
 --nosql
 --type-set=gql=.gql
 --type-set=yml=.yml
+--type-set=yml=.graph
+--type-set=haml=.haml
