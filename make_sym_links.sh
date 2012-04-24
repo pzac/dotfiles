@@ -9,4 +9,5 @@ ln -sf ~/dotfiles/vimrc ~/.vimrc
 ln -sf ~/dotfiles/zshenv ~/.zshenv
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 ln -sf ~/dotfiles/ackrc ~/.ackrc
+ln -sf ~/dotfiles/vim ~/.vim
 

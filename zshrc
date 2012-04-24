@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 #export ZSH_THEME="kennethreitz"
 # export ZSH_THEME="pzac"
 # export ZSH_THEME="sunrise"
-export ZSH_THEME="simple"
+export ZSH_THEME="minimal"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"

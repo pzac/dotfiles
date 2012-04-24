@@ -46,7 +46,8 @@ syntax enable
 if has('gui_running')
   " colorscheme github
   " colorscheme solarized
-  colorscheme molokai
+  " colorscheme clarity
+  colorscheme zenburn
 else
   colorscheme molokai
 endif
@@ -127,7 +128,6 @@ imap <Tab> <C-R>=SuperTab()<CR>
 " use ,F to jump to tag in a vertical split
 "nnoremap <Leader>F :let word=expand(""):vsp:wincmd w:exec("tag ". word)
 nnoremap <silent> ,F :let word=expand("<cword>")<CR>:vsp<CR>:wincmd w<cr>:exec("tag ". word)<cr>
-
 
 " use ,gf to go to file in a vertical split
 nnoremap <Leader>gf :vertical botright wincmd f
