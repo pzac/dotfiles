@@ -39,6 +39,7 @@ set number
 set title  " change terminal title
 set background=light
 set cursorline " highlight current line
+set cc=80 " show wrap column
 " set colorcolumn=80
 set laststatus=2 " always show the status line
 set t_Co=256 " tell vim explicitly that the terminal has 256 colors
@@ -47,7 +48,8 @@ if has('gui_running')
   " colorscheme github
   " colorscheme solarized
   " colorscheme clarity
-  colorscheme zenburn
+  " colorscheme zenburn
+  colorscheme Tomorrow-Night
 else
   colorscheme molokai
 endif
@@ -86,7 +88,7 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR> 
 
 " === file ignore settings ===
 set wildignore+=*/.git
-set wildignore+=tmp/**,vendor/*
+set wildignore+=tmp/**,vendor/*,*/.sass-cache/*
 set wildignore+=*.png,*.gif,*.jpg
 
 " === filetypes ===
@@ -137,3 +139,20 @@ nnoremap <Leader>a :Ack
 
 " mouse scroll support
 set mouse=a
+
+" === nerd commenter ===
+" nerdcommenter
+" ,/ to invert comment on the current line/selection
+nmap <leader>/ :call NERDComment(0, "invert")<cr>
+vmap <leader>/ :call NERDComment(0, "invert")<cr>
+
+" masochism
+" disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
