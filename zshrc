@@ -27,7 +27,9 @@ source $HOME/dotfiles/common/aliases
 source $HOME/dotfiles/common/env
 
 # Customize to your needs...
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 cdpath=(~/Sites)
+unsetopt correct_all
+eval "$(/usr/local/bin/rbenv init -)"
 

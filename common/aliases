@@ -10,4 +10,6 @@ alias grep="grep --color=auto"
 alias be="bundle exec"
 alias cuc="bundle exec cucumber --require features"
 alias memflush="echo 'flush_all' | nc localhost 11211"
+alias ttt="touch tmp/restart.txt"
+alias catall="head -n 999999"
 
