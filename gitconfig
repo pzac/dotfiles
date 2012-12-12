@@ -29,7 +29,7 @@
   wc = whatchanged
   wd = diff --word-diff
 [user]
-  name = Paolo Zaccagnini
+	name = Paolo Zaccagnini
   email = paozac@gmail.com
 [push]
   default = tracking

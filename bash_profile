@@ -37,6 +37,5 @@ login_and_host="\u${RED}\h${NO_COLOUR}:"
 curr_dir="${YELLOW}\w${NO_COLOUR}"
 git_info='$(__git_ps1 " (%s)")'
 export PS1="${login_and_host}${curr_dir}${GREEN}${git_info}${NO_COLOUR}\n\$ "
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 export EDITOR="/usr/bin/mate -w"

@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 #export ZSH_THEME="kennethreitz"
 # export ZSH_THEME="pzac"
 # export ZSH_THEME="sunrise"
-export ZSH_THEME="minimal"
+export ZSH_THEME="af-magic"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -31,5 +31,6 @@ source $HOME/dotfiles/common/env
 
 cdpath=(~/Sites)
 unsetopt correct_all
-eval "$(/usr/local/bin/rbenv init -)"
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
