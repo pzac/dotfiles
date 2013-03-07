@@ -1,2 +1,5 @@
-export PATH=/usr/local/bin:~/.rbenv/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/PostgreSQL8/bin:/usr/local/mysql/bin:~/bin:/usr/local/share/python:$PATH
+export PATH=/usr/local/bin:~/.rbenv/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/Library/PostgreSQL8/bin:/usr/local/mysql/bin:~/bin:/usr/local/share/python:/usr/local/share/npm/bin:$PATH
 export EDITOR="vim"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
