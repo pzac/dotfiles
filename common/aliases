@@ -11,5 +11,7 @@ alias be="bundle exec"
 alias cuc="bundle exec cucumber --require features"
 alias memflush="echo 'flush_all' | nc localhost 11211"
 alias ttt="touch tmp/restart.txt"
-alias catall="head -n 999999"
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias tlf="tail -f"
+alias b="bundle"
 
