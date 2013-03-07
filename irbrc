@@ -1,15 +1,5 @@
 require 'rubygems'
 
-begin
-  require 'wirble'
-  require 'hirb'
-  require 'awesome_print'
-  Wirble.init
-  Wirble.colorize
-  Hirb.enable 
-rescue LoadError => e
-  puts "Missing gem: #{e}"
-end
 
 class Object
   def local_methods
@@ -36,9 +26,6 @@ ANSI[:WHITE]     = "\e[37m"
 # because some might not be included in your Gemfile
 # and errors will be raised
 
-# Wirble is a gem that handles coloring the IRB
-# output and history
-
 def gethtml(options = {})
   url = app.url_for(options)
   app.get(url)
@@ -52,6 +39,3 @@ end
 
 ARGV.concat [ "--readline", "--simple-prompt" ]
 
-def q(x)
-  Current.gql.query(x)
-end
