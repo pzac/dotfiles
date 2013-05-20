@@ -23,11 +23,14 @@
   pl = pull
   ps = push
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  h = !git --no-pager log --graph  --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
+  # h = !git --no-pager log --graph  --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
+  h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   hh = !git h -20
   fe = fetch
   wc = whatchanged
   wd = diff --word-diff
+  ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
+  theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 [user]
 	name = Paolo Zaccagnini
   email = paozac@gmail.com
@@ -51,6 +54,7 @@
   quotepath = false
   excludesfile = /Users/paozac/.gitignore_global
   whitespace=trailing-space,cr-at-eol
+	pager = cat
 [heroku]
   account = personal
 [mergetool]
@@ -68,7 +72,7 @@
   #format = web
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
