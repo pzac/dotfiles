@@ -9,6 +9,7 @@ alias c="cd .."
 alias grep="grep --color=auto"
 alias be="bundle exec"
 alias cuc="bundle exec cucumber --require features"
+alias cuf="cucumber -f fuubar"
 alias memflush="echo 'flush_all' | nc localhost 11211"
 alias ttt="touch tmp/restart.txt"
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
@@ -16,4 +17,5 @@ alias tlf="tail -f"
 alias b="bundle"
 alias prettyjson="python -mjson.tool"
 alias psql="psql --pset pager=off"
+alias gl="git pull --prune"
 
