@@ -37,5 +37,10 @@ def mate(content, filename='debug.txt')
   `mate #{filename}`
 end
 
+def subl(content, filename='debug.txt')
+  File.open(filename, 'w') { |f| f.write(content) }
+  `subl #{filename}`
+end
+
 ARGV.concat [ "--readline", "--simple-prompt" ]
 
