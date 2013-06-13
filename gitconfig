@@ -41,6 +41,7 @@
 [color]
   status = auto
   diff = auto
+  branch = auto
 [format]
   pretty = oneline
 [apply]
@@ -60,7 +61,7 @@
 [mergetool]
   keepBackup = true
 [diff]
-  # external = /Users/paozac/bin/git-diff-cmd.sh
+  # external = ~/bin/git-diff-cmd.sh
 [advice]
   pushNonFastForward = false
   statusHints = false
@@ -70,9 +71,3 @@
   detachedHead = false
 [help]
   #format = web
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
