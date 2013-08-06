@@ -25,7 +25,7 @@ source $HOME/dotfiles/common/env
 # Customize to your needs...
 #export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
-cdpath=(~/Sites)
+cdpath=(~/Sites;~/Projects)
 unsetopt correct_all
 
 ### Added by the Heroku Toolbelt
