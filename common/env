@@ -2,19 +2,3 @@ export PATH=./bbin:/usr/local/bin:~/.rbenv/bin:/usr/local/sbin:/opt/local/bin:/o
 export EDITOR="subl -w"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# Ruby GC
-#
-
-# initial memory size (default: 10_000)
-export RUBY_HEAP_MIN_SLOTS=1250000
-
-export RUBY_HEAP_SLOTS_INCREMENT=100000
-
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-
-# initial size of a memory slab (default: 8_000_000)
-export RUBY_GC_MALLOC_LIMIT=40000000
-
-# default: 4096
-export RUBY_HEAP_FREE_MIN=12500
