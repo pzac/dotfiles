@@ -3,6 +3,9 @@ setopt auto_cd
 
 setopt extended_glob # treat #, ~, and ^ as part of patterns for filename generation
 
+setopt no_case_glob  # set ignore case for ls etc
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
 setopt append_history # Allow multiple terminal sessions to all append to one zsh command history
 setopt extended_history # save timestamp of command and duration
 setopt hist_expire_dups_first # when trimming history, lose oldest duplicates first
