@@ -1,0 +1,5 @@
+My dotfiles. I've decided to rebuild my environment from scratch.
+
+## Useful links
+
+* [http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/](http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/)

@@ -1,15 +1,10 @@
-source $HOME/dotfiles/common/aliases
-source $HOME/dotfiles/common/env
-unsetopt correct_all
+source $HOME/.dotfiles/common/aliases
+source $HOME/.dotfiles/common/exports
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+source $HOME/.dotfiles/zsh/colors.zsh
+source $HOME/.dotfiles/zsh/options.zsh
+source $HOME/.dotfiles/zsh/prompt.zsh
+source $HOME/.dotfiles/zsh/autocomplete.zsh
 
-setopt auto_cd
-cdpath=(~ ~/Sites ~/Projects)
 
-autoload -U compinit && compinit
 
-# PROMPT
-autoload -U colors && colors
-export PROMPT="%{$fg_bold[blue]%}%~ » %{$reset_color%}"
