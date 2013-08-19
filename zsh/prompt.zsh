@@ -1,1 +1,1 @@
-export PROMPT="%{$PR_GREEN%}%~ %{$PR_BOLD_YELLOW%}» %{$reset_color%}"
+export PROMPT="%F{033}%~ %F{202}» %{$reset_color%}"
