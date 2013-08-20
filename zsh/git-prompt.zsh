@@ -3,14 +3,12 @@
 # Adapted from code found at <https://gist.github.com/1712320>.
 
 # Modify the colors and symbols in these variables as desired.
-GIT_PROMPT_PREFIX="%F{039}[%{$reset_color%}"
-GIT_PROMPT_SUFFIX="%F{039}]%{$reset_color%}"
-GIT_PROMPT_AHEAD="%{$fg[red]%}ANUM%{$reset_color%}"
-GIT_PROMPT_BEHIND="%{$fg[cyan]%}BNUM%{$reset_color%}"
-GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}⚡︎%{$reset_color%}"
-GIT_PROMPT_UNTRACKED="%F{001}●%{$reset_color%}"
-GIT_PROMPT_MODIFIED="%{$fg_bold[yellow]%}●%{$reset_color%}"
-GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%}"
+GIT_PROMPT_AHEAD="+ANUM"
+GIT_PROMPT_BEHIND="-BNUM"
+GIT_PROMPT_MERGING="~"
+GIT_PROMPT_UNTRACKED="?"
+GIT_PROMPT_MODIFIED="*"
+GIT_PROMPT_STAGED="+"
 
 # Show Git branch/tag, or name-rev if on detached head
 parse_git_branch() {
@@ -59,8 +57,5 @@ fi
 # If inside a Git repository, print its branch and state
 git_prompt_string() {
 local git_where="$(parse_git_branch)"
-[ -n "$git_where" ] && echo "$GIT_PROMPT_PREFIX$(parse_git_state) %{$fg[yellow]%}${git_where#(refs/heads/|tags/)}$GIT_PROMPT_SUFFIX"
+[ -n "$git_where" ] && echo "[$(parse_git_state)](${git_where#(refs/heads/|tags/)})"
 }
-
-# Set the right-hand prompt
-RPS1='$(git_prompt_string)'
