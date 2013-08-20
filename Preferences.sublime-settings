@@ -1,0 +1,61 @@
+{
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/Github.tmTheme",
+	"detect_indentation": false,
+	"detect_slow_plugins": false,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.log",
+		"tags",
+		"*.DS_Store",
+		"*.sublime-workspace",
+		".tags",
+		".tags_sorted_by_file",
+		".tmtags",
+		"*.tmproj",
+		"*.sqlite3",
+		"*.eps",
+		"*.min.js"
+	],
+	"fold_buttons": true,
+	"folder_exclude_patterns":
+	[
+		".sass-cache",
+		".git",
+		".yardoc",
+		"tmp",
+		"db/old_migrate",
+		"solr/data",
+		"solr/pids"
+	],
+	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
+	"font_size": 12.0,
+	"gutter": true,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"AdvancedNewFile",
+		"Vintage",
+		"BeautifyRuby"
+	],
+	"line_numbers": true,
+	"open_files_in_new_window": true,
+	"phoenix_color_blue": true,
+	"remember_open_files": false,
+	"rulers":
+	[
+		78
+	],
+	"save_on_focus_lost": true,
+	"scroll_past_end": false,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true
+}
