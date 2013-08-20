@@ -40,8 +40,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"AdvancedNewFile",
 		"Vintage",
+		"AdvancedNewFile",
 		"BeautifyRuby"
 	],
 	"line_numbers": true,
