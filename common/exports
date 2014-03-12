@@ -1,4 +1,4 @@
-export PATH=binstubs:/usr/local/bin:~/.rbenv/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:~/bin:/usr/local/share/python:usr/local/share/npm/bin:/usr/local/heroku/bin:$PATH
+export PATH=binstubs:/usr/local/bin:~/.rbenv/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:~/bin:/usr/local/share/python:/usr/local/share/npm/bin:/usr/local/heroku/bin:$PATH
 export EDITOR="subl -w"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
