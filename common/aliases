@@ -4,6 +4,7 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias ll="ls -Al"
 alias la="ls -a"
+alias sl=ls
 
 alias cd..="cd .."
 alias c="cd .."
