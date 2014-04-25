@@ -33,7 +33,7 @@
   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 [user]
 	name = Paolo Zaccagnini
-  email = paozac@gmail.com
+  email = paolo@pzac.net
 [push]
   default = tracking
 [branch]
