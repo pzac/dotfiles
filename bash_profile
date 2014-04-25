@@ -31,7 +31,7 @@ function lc () {
    fi
 }
 
-source /opt/local/etc/bash_completion.d/git
+#source /opt/local/etc/bash_completion.d/git
 export GIT_PS1_SHOWDIRTYSTATE=1
 login_and_host="\u${RED}\h${NO_COLOUR}:"
 curr_dir="${YELLOW}\w${NO_COLOUR}"
