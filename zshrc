@@ -7,6 +7,7 @@ source $HOME/.dotfiles/zsh/autocomplete.zsh
 source $HOME/.dotfiles/zsh/history.zsh
 source $HOME/.dotfiles/zsh/git-prompt.zsh
 source $HOME/.dotfiles/zsh/prompt.zsh
+source $HOME/.dotfiles/zsh/misc.zsh
 
 
 
