@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Dayle Rees Color Schemes/Github.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Dawn.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -30,12 +30,8 @@
 		"solr/data",
 		"solr/pids"
 	],
-	"font_face": "Source Code Pro",
-	"font_options":
-	[
-		"subpixel_antialias"
-	],
-	"font_size": 12.0,
+	"font_face": "Menlo",
+	"font_size": 12,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
