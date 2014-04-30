@@ -27,7 +27,7 @@ let mapleader=","
 
 " interface
 set number
-set title  " change terminal title
+set notitle
 set background=light
 set laststatus=2 " always show the status line
 set t_Co=256 " tell vim explicitly that the terminal has 256 colors
