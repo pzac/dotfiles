@@ -15,10 +15,10 @@
   ri = rebase -i
   pl = pull
   ps = push
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  # h = !git --no-pager log --graph  --pretty=\"format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset\"
-  h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  hh = !git h -20
+  h1 = log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  h2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  h3 = log --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  hh = !git h3 -20
   fe = fetch
   wc = whatchanged
   wd = diff --word-diff
