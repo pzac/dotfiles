@@ -1,23 +1,16 @@
 [alias]
-  # st = status -sb
-  st = status
+  st = status -sb
   sta = stash
   ci = commit
   co = checkout
   com = checkout master
-  cos = checkout staging
-  cop = checkout production
   br = branch
   rh = reset --hard
   cp = cherry-pick
   re = rebase
   rem = rebase master
-  rep = rebase production
-  res = rebase staging
   riom = rebase -i origin/master
   reom = rebase origin/master
-  reop = rebase origin/production
-  reos = rebase origin/staging
   me = merge
   ri = rebase -i
   pl = pull
@@ -32,7 +25,7 @@
   ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 [user]
-	name = Paolo Zaccagnini
+  name = Paolo Zaccagnini
   email = paolo@pzac.net
 [push]
   default = tracking
@@ -71,3 +64,6 @@
   detachedHead = false
 [help]
   #format = web
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
