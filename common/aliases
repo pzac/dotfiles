@@ -28,3 +28,5 @@ alias psql="psql --pset pager=off"
 alias prettyjson="python -mjson.tool"
 
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+
+alias f="foreman start"
