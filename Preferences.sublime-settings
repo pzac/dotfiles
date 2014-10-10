@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -30,14 +30,14 @@
 		"solr/data",
 		"solr/pids"
 	],
-	"font_face": "Input Mono Compressed",
-	"font_size": 13,
+	"font_face": "Monaco",
+	"font_size": 10,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"AdvancedNewFile",
-		"Vintage"
+		"Vintage",
+		"AdvancedNewFile"
 	],
 	"line_numbers": true,
 	"open_files_in_new_window": true,
