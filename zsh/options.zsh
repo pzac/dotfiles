@@ -25,6 +25,6 @@ unsetopt menu_complete # do not autoselect the first completion entry
 unsetopt correct_all
 
 setopt prompt_subst # Enable parameter expansion, command substitution, and arithmetic expansion in the prompt
-setopt transient_rprompt # only show the rprompt on the current prompt
+# setopt transient_rprompt # only show the rprompt on the current prompt
 
 cdpath=(~ ~/Sites ~/Projects ~/LP)
