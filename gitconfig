@@ -1,4 +1,5 @@
 [alias]
+  s = status
   st = status -sb
   sta = stash
   ci = commit
@@ -17,13 +18,14 @@
   ps = push
   h1 = log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   h2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  h3 = log --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  h3 = log --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph
   hh = !git h3 -20
   fe = fetch
   wc = whatchanged
   wd = diff --word-diff
   ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+	remotes = remote -v
 [user]
   name = Paolo Zaccagnini
   email = paolo@pzac.net
@@ -65,5 +67,6 @@
 [help]
   #format = web
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
