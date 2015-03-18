@@ -1,10 +1,12 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Brogrammer.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
+	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		"*.log",
@@ -17,8 +19,10 @@
 		"*.tmproj",
 		"*.sqlite3",
 		"*.eps",
-		"*.min.js"
+		"*.min.js",
+		"*.svg"
 	],
+	"find_selected_text": true,
 	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
@@ -30,14 +34,20 @@
 		"solr/data",
 		"solr/pids"
 	],
-	"font_face": "Monaco",
-	"font_size": 10,
+	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"subpixel_antialias",
+		"antialias"
+	],
+	"font_size": 12,
 	"gutter": true,
 	"highlight_line": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage",
-		"AdvancedNewFile"
+		"AdvancedNewFile",
+		"Vintage"
 	],
 	"line_numbers": true,
 	"open_files_in_new_window": true,
@@ -49,8 +59,12 @@
 	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": false,
+	"show_full_path": true,
+	"soda_classic_tabs": true,
 	"tab_size": 2,
+	"theme": "Soda Light 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true
+	"use_tab_stops": true,
+	"word_wrap": true
 }
