@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Colorsublime - Themes/Brogrammer.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Oceanic_Next.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
 	"draw_minimap_border": true,
@@ -23,7 +23,7 @@
 		"*.svg"
 	],
 	"find_selected_text": true,
-	"fold_buttons": true,
+	"fold_buttons": false,
 	"folder_exclude_patterns":
 	[
 		".sass-cache",
