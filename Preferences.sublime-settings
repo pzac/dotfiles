@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Colorsublime - Themes/Oceanic_Next.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/HalfLife.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
 	"draw_minimap_border": true,
@@ -23,7 +23,7 @@
 		"*.svg"
 	],
 	"find_selected_text": true,
-	"fold_buttons": false,
+	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
 		".sass-cache",
@@ -34,20 +34,20 @@
 		"solr/data",
 		"solr/pids"
 	],
-	"font_face": "Source Code Pro",
+	"font_face": "Ubuntu Mono",
 	"font_options":
 	[
 		"subpixel_antialias",
 		"antialias"
 	],
-	"font_size": 12,
+	"font_size": 15,
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"AdvancedNewFile",
-		"Vintage"
+		"Vintage",
+		"AdvancedNewFile"
 	],
 	"line_numbers": true,
 	"open_files_in_new_window": true,
@@ -55,14 +55,14 @@
 	"remember_open_files": false,
 	"rulers":
 	[
-		78
+		78,
+		100
 	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": false,
 	"show_full_path": true,
 	"soda_classic_tabs": true,
 	"tab_size": 2,
-	"theme": "Soda Light 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
