@@ -34,7 +34,7 @@
 		"solr/data",
 		"solr/pids"
 	],
-	"font_face": "Ubuntu Mono",
+	"font_face": "Input Mono",
 	"font_options":
 	[
 		"subpixel_antialias",
