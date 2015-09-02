@@ -10,5 +10,5 @@ ln -sf ~/.dotfiles/zshenv ~/.zshenv
 ln -sf ~/.dotfiles/zshrc ~/.zshrc
 ln -sf ~/.dotfiles/ackrc ~/.ackrc
 ln -sf ~/.dotfiles/vim ~/.vim
-ln -sf ~/.dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-
+ln -sf ~/.dotfiles/Preferences.sublime-settings  ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+ln -sf ~/.dotfiles/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
