@@ -48,7 +48,7 @@
   tool = opendiff
 [core]
   quotepath = false
-  excludesfile = /Users/paozac/.gitignore_global
+  excludesfile = /Users/pzac/.gitignore_global
   whitespace=trailing-space,cr-at-eol
 	pager = cat
 [heroku]

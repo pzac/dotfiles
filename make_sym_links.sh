@@ -3,6 +3,7 @@ ln -sf ~/.dotfiles/irbrc ~/.irbrc
 ln -sf ~/.dotfiles/editrc ~/.editrc
 ln -sf ~/.dotfiles/bash_profile ~/.bash_profile
 ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/gitignore_global ~/.gitignore_global
 ln -sf ~/.dotfiles/gemrc ~/.gemrc
 ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -sf ~/.dotfiles/vimrc ~/.vimrc
