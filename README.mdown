@@ -1,5 +1,23 @@
 My dotfiles. I've decided to rebuild my environment from scratch.
 
+## Sublime Text 3 Packages
+
+* Better CoffeeScript
+* Colorsublime
+* Colorsublime - Themes
+* Comments Aware Enter
+* Cucumber
+* FontCycler
+* Git
+* GitGutter
+* Github Tools
+* nginx
+* Origami
+* Package Control
+* Pretty JSON
+* RSpec
+* View In Browser
+
 ## Useful links
 
 * [http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/](http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/)
