@@ -40,7 +40,15 @@
 		"subpixel_antialias",
 		"antialias"
 	],
-	"font_size": 15,
+	"font_size": 13,
+	"fonts_list":
+	[
+		"Input Mono",
+		"Ubuntu Mono",
+		"Menlo",
+		"Source Code Pro",
+		"Fira Mono"
+	],
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,

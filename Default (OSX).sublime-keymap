@@ -4,6 +4,7 @@
   { "keys": ["ctrl+super+m"], "command": "toggle_minimap"},
   { "keys": ["super+shift+w"], "command": "close_all" },
 
+  { "keys": ["f4"], "command": "next_font" },
   { "keys": ["f5"], "command": "next_bookmark" },
   { "keys": ["shift+f5"], "command": "prev_bookmark" },
   { "keys": ["super+f5"], "command": "toggle_bookmark" },
