@@ -9,3 +9,6 @@ source $HOME/.dotfiles/zsh/git-prompt.zsh
 source $HOME/.dotfiles/zsh/prompt.zsh
 source $HOME/.dotfiles/zsh/misc.zsh
 source $HOME/.dotfiles/zsh/key-bindings.zsh
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
