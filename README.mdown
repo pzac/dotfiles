@@ -1,5 +1,19 @@
 My dotfiles. I've decided to rebuild my environment from scratch.
 
+## Tools
+
+* pjson (`pip install pjson`)
+
+### Homebrew recipes
+
+* httpie
+* rbenv
+* the_silver_searcher
+* tig 
+* tree
+* cloc
+* graphviz
+
 ## Sublime Text 3 Packages
 
 * Better CoffeeScript
