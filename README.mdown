@@ -9,7 +9,7 @@ My dotfiles. I've decided to rebuild my environment from scratch.
 * httpie
 * rbenv
 * the_silver_searcher
-* tig 
+* tig
 * tree
 * cloc
 * graphviz
@@ -17,6 +17,7 @@ My dotfiles. I've decided to rebuild my environment from scratch.
 ## Sublime Text 3 Packages
 
 * Better CoffeeScript
+* ChangeQuotes
 * Colorsublime
 * Colorsublime - Themes
 * Comments Aware Enter
@@ -30,7 +31,9 @@ My dotfiles. I've decided to rebuild my environment from scratch.
 * Package Control
 * Pretty JSON
 * RSpec
+* Select Quoted
 * View In Browser
+
 
 ## Useful links
 
