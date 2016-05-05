@@ -13,5 +13,5 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export GOROOT=/usr/local/Cellar/go/1.3.1/libexec
 export GOPATH=~/Go
-
+export HOMEBREW_NO_ANALYTICS=1
 
