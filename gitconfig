@@ -54,7 +54,7 @@
   quotepath = false
   excludesfile = /Users/pzac/.gitignore_global
   whitespace=trailing-space,cr-at-eol
-	pager = cat
+	pager = diff-so-fancy
 [heroku]
   account = personal
 [mergetool]
