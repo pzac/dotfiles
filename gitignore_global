@@ -4,4 +4,5 @@ binstubs/
 *.sublime-project
 *.sublime-workspace
 .byebug_history
+.DS_Store
 
