@@ -27,4 +27,4 @@ unsetopt correct_all
 setopt prompt_subst # Enable parameter expansion, command substitution, and arithmetic expansion in the prompt
 # setopt transient_rprompt # only show the rprompt on the current prompt
 
-cdpath=(~ ~/Sites ~/Projects)
+cdpath=(~/Sites ~/Projects)
