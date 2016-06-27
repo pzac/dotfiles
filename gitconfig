@@ -2,6 +2,7 @@
   s = status
   st = status -sb
   sta = stash
+  pop = stash pop
   ci = commit
   co = checkout
   com = checkout master
@@ -29,7 +30,7 @@
   wd = diff --word-diff
   ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
-	remotes = remote -v
+  remotes = remote -v
 [user]
   name = Paolo Zaccagnini
   email = paolo@pzac.net
