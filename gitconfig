@@ -20,6 +20,7 @@
   ri = rebase -i
   pl = pull
   ps = push
+  pf = push --force-with-lease
   puhs = push
   h1 = log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   h2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -51,17 +52,22 @@
   # autocorrect = 1
 [merge]
   tool = opendiff
+  #conflictstyle = diff3
 [core]
   quotepath = false
   excludesfile = /Users/pzac/.gitignore_global
   whitespace=trailing-space,cr-at-eol
-	pager = diff-so-fancy
+	# pager = diff-so-fancy
 [heroku]
   account = personal
 [mergetool]
   keepBackup = true
 [diff]
-  # external = ~/bin/git-diff-cmd.sh
+  tool = opendiff
+[difftool]
+  prompt = false
+[difftool "opendiff"]
+  cmd = /usr/bin/opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\" | cat
 [advice]
   pushNonFastForward = false
   statusHints = false
@@ -75,3 +81,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[rerere]
+	enabled = 1
