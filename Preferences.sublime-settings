@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Colorsublime - Themes/HalfLife.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/PZ-HalfLife.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
 	"draw_minimap_border": true,
@@ -32,9 +32,10 @@
 		"tmp",
 		"db/old_migrate",
 		"solr/data",
-		"solr/pids"
+		"solr/pids",
+		"coverage"
 	],
-	"font_face": "Input Mono",
+	"font_face": "Cousine",
 	"font_options":
 	[
 		"subpixel_antialias",
@@ -47,17 +48,27 @@
 		"Ubuntu Mono",
 		"Menlo",
 		"Source Code Pro",
-		"Fira Mono"
+		"Fira Mono",
+		"mononoki",
+		"Cousine"
 	],
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage",
-		"AdvancedNewFile"
+		"AdvancedNewFile",
+		"Vintage"
 	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"itg_sidebar_tree_small": true,
 	"line_numbers": true,
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
 	"open_files_in_new_window": true,
 	"phoenix_color_blue": true,
 	"remember_open_files": false,

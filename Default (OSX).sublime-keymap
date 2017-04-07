@@ -10,5 +10,6 @@
   { "keys": ["shift+f5"], "command": "prev_bookmark" },
   { "keys": ["super+f5"], "command": "toggle_bookmark" },
   { "keys": ["super+shift+f5"], "command": "clear_bookmarks" },
+  { "keys": ["super+shift+t"], "command": "reopen_last_file" }
 
 ]
