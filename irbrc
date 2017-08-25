@@ -28,4 +28,4 @@ def subl(content, filename='debug.txt')
 end
 
 ARGV.concat [ "--readline", "--simple-prompt" ]
-
+IRB.conf[:SAVE_HISTORY] = 10000

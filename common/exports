@@ -2,16 +2,16 @@ _PATHS=binstubs:bin:~/bin
 _PATHS=$_PATHS:/usr/local/bin:/usr/local/sbin
 _PATHS=$_PATHS:/opt/local/bin:/opt/local/sbin
 _PATHS=$_PATHS:~/.rbenv/bin
-_PATHS=$_PATHS:/usr/local/share/python
 _PATHS=$_PATHS:/usr/local/share/npm/bin
 _PATHS=$_PATHS:/usr/local/heroku/bin
 _PATHS=$_PATHS:~/Go/bin
+_PATHS=$_PATHS:/usr/local/opt/postgresql@9.4/bin
 
 export PATH=$_PATHS:$PATH
 export EDITOR="subl -w"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export GOROOT=/usr/local/Cellar/go/1.3.1/libexec
+export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Go
 export HOMEBREW_NO_ANALYTICS=1
 
