@@ -31,4 +31,6 @@ alias prettyjson="python -mjson.tool"
 alias f="foreman start"
 alias rr="bundle exec rake routes | grep"
 alias rc="bundle exec rails console"
+alias berc="bundle exec rails console"
+alias bers="bundle exec rails server"
 #alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
