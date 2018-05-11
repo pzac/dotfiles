@@ -33,7 +33,7 @@ My dotfiles. I've decided to rebuild my environment from scratch.
 * RSpec
 * Select Quoted
 * View In Browser
-
+* [titoBouzout/Tag](https://github.com/titoBouzout/Tag)
 
 ## Useful links
 
