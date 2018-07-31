@@ -38,7 +38,7 @@
   name = Paolo Zaccagnini
   email = paolo@pzac.net
 [push]
-	default = current
+	default = tracking
 [branch]
   autosetuprebase = always
 [color]
