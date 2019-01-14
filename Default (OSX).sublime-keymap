@@ -10,6 +10,10 @@
   { "keys": ["shift+f5"], "command": "prev_bookmark" },
   { "keys": ["super+f5"], "command": "toggle_bookmark" },
   { "keys": ["super+shift+f5"], "command": "clear_bookmarks" },
-  { "keys": ["super+shift+t"], "command": "reopen_last_file" }
+  { "keys": ["super+shift+t"], "command": "reopen_last_file" },
+  { "keys": ["super+shift+space"], "command": "expand_region" },
+  { "keys": ["super+u"], "command": "expand_region", "args": {"undo": true}, "context": [{ "key": "expand_region_soft_undo" }] },
+
+  { "keys": ["super+k", "super+k"], "command": "destroy_pane", "args": {"direction": "self"} }
 
 ]

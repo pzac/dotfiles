@@ -1,8 +1,9 @@
 {
+	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/freshcut.tmTheme",
+	"color_scheme": "Packages/Dayle Rees Color Schemes/legacy/TronLight.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
 	"draw_minimap_border": true,
@@ -22,7 +23,8 @@
 		"*.eps",
 		"*.min.js",
 		"*.svg",
-		"*.xlsx"
+		"*.xlsx",
+		"*.xls"
 	],
 	"find_selected_text": true,
 	"fold_buttons": true,
@@ -44,7 +46,7 @@
 		"subpixel_antialias",
 		"no_round"
 	],
-	"font_size": 12,
+	"font_size": 14,
 	"fonts_list":
 	[
 		"Operator Mono",
@@ -84,10 +86,14 @@
 	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": false,
+	"show_definitions": false,
 	"show_full_path": true,
+	"sidebar_size_14": true,
 	"soda_classic_tabs": true,
+	"status_bar_brighter": true,
 	"tab_size": 2,
-	"theme": "Default.sublime-theme",
+	"tabs_small": true,
+	"theme": "Afterglow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
