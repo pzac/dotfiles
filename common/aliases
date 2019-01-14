@@ -1,7 +1,7 @@
 alias ls="ls -G -hF"
-alias cp="cp -i"
-alias mv="mv -i"
-alias rm="rm -i"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -iv"
 alias ll="ls -Al"
 alias la="ls -a"
 alias sl=ls
@@ -33,6 +33,11 @@ alias rr="bundle exec rake routes | grep"
 alias rc="bundle exec rails console"
 alias berc="bundle exec rails console"
 alias bers="bundle exec rails server"
+alias berm="bundle exec rails db:migrate"
+alias bertp="bundle exec rails db:test:prepare"
 #alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
 
 alias features="bundle exec rspec --tag js"
+alias efeatures="SKIP_EMBER=true bundle exec rspec --tag js"
+alias ehfeatures="SKIP_EMBER=true HEADLESS=false bundle exec rspec --tag js"
+alias hfeatures="HEADLESS=false bundle exec rspec --tag js"
