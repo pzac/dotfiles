@@ -35,8 +35,8 @@
   theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
   remotes = remote -v
 [user]
-  name = Paolo Zaccagnini
-  email = paolo@pzac.net
+	name = Paolo Zaccagnini
+	email = paolo@pzac.net
 [push]
 	default = tracking
 [branch]
