@@ -5,7 +5,8 @@ _PATHS=$_PATHS:~/.rbenv/bin
 _PATHS=$_PATHS:/usr/local/share/npm/bin
 _PATHS=$_PATHS:/usr/local/heroku/bin
 _PATHS=$_PATHS:~/Go/bin
-_PATHS=$_PATHS:/usr/local/opt/postgresql@9.4/bin
+_PATHS=$_PATHS:/usr/local/opt/postgresql@9.5/bin
+_PATHS=$_PATHS:/usr/local/opt/node@8/bin
 
 export PATH=$_PATHS:$PATH
 export EDITOR="subl -w"

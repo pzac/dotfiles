@@ -48,8 +48,8 @@
 [format]
   pretty = oneline
 [apply]
-  ignorewhitespace = change
-  whitespace = fix
+  # ignorewhitespace = change
+  # whitespace = fix
 [help]
   # autocorrect = 1
 [merge]
@@ -58,7 +58,8 @@
 [core]
   quotepath = false
   excludesfile = /Users/pzac/.gitignore_global
-  whitespace=trailing-space,cr-at-eol
+  # whitespace=trailing-space,cr-at-eol
+	pager = cat
 	# pager = diff-so-fancy
 [heroku]
   account = personal
@@ -85,3 +86,5 @@
 	required = true
 [rerere]
 	enabled = 1
+[url "ssh://git@heroku.com/"]
+	insteadOf = https://git.heroku.com/

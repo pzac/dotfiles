@@ -34,10 +34,8 @@ alias rc="bundle exec rails console"
 alias berc="bundle exec rails console"
 alias bers="bundle exec rails server"
 alias berm="bundle exec rails db:migrate"
-alias bertp="bundle exec rails db:test:prepare"
+alias bertp="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 bundle exec rails db:test:prepare"
 #alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
 
 alias features="bundle exec rspec --tag js"
-alias efeatures="SKIP_EMBER=true bundle exec rspec --tag js"
-alias ehfeatures="SKIP_EMBER=true HEADLESS=false bundle exec rspec --tag js"
 alias hfeatures="HEADLESS=false bundle exec rspec --tag js"
