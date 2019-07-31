@@ -3,7 +3,7 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Dayle Rees Color Schemes/legacy/TronLight.tmTheme",
+	"color_scheme": "Packages/Theme - Primer/primer.dark.tmTheme",
 	"detect_indentation": false,
 	"detect_slow_plugins": false,
 	"draw_minimap_border": true,
@@ -46,7 +46,7 @@
 		"subpixel_antialias",
 		"no_round"
 	],
-	"font_size": 11,
+	"font_size": 14,
 	"fonts_list":
 	[
 		"Operator Mono",
@@ -65,6 +65,7 @@
 	[
 		"AdvancedNewFile",
 		"Markdown",
+		"Rust",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -73,7 +74,7 @@
 		"draw_active"
 	],
 	"itg_sidebar_tree_small": true,
-	"line_numbers": false,
+	"line_numbers": true,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"open_files_in_new_window": true,
@@ -93,7 +94,8 @@
 	"status_bar_brighter": true,
 	"tab_size": 2,
 	"tabs_small": true,
-	"theme": "Afterglow.sublime-theme",
+	"theme": "Primer Dark.sublime-theme",
+	"theme_primer_sidebar_tree_xsmall": true,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
