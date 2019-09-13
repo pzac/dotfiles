@@ -15,4 +15,5 @@ export LANG=en_US.UTF-8
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Go
 export HOMEBREW_NO_ANALYTICS=1
+export PYTHONSTARTUP=~/.pyrc
 
