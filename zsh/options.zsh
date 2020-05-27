@@ -3,6 +3,8 @@ setopt auto_cd
 
 setopt extended_glob # treat #, ~, and ^ as part of patterns for filename generation
 
+unsetopt nomatch # If a pattern for filename generation has no matches, leave it unchanged in the argument list
+
 setopt no_case_glob  # set ignore case for ls etc
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
