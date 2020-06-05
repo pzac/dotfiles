@@ -1,0 +1,35 @@
+{
+  "variables": {
+    "badge_font_size": 10
+  },
+  "rules": [
+    {
+      "class": "commit_summary_control",
+      "content_margin": [2, 1, 0, 1 ]
+    },
+    {
+      "class": "tag_annotation",
+      "font.size": "var(badge_font_size)"
+    },
+    {
+      "class": "branch_annotation",
+      "font.size": "var(badge_font_size)"
+    },
+    {
+      "class": "remote_annotation",
+      "font.size": "var(badge_font_size)"
+    },
+    {
+      "class": "head_annotation",
+      "font.size": "var(badge_font_size)"
+    },
+    {
+      "class": "stash_annotation",
+      "font.size": "var(badge_font_size)"
+    },
+    {
+      "class": "file_annotation",
+      "font.size": "var(badge_font_size)"
+    }
+  ]
+}
