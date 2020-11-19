@@ -65,4 +65,5 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,config.ru}    set ft=ruby
 imap <C-l> <Space>=><Space>
 
 " mouse scroll support
-set mouse=a
+set mouse=
+set ttymouse=
