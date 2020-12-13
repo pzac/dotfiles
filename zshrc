@@ -10,5 +10,5 @@ source $HOME/.dotfiles/zsh/misc.zsh
 source $HOME/.dotfiles/zsh/key-bindings.zsh
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-eval "$(pyenv init -)"
+whence rbenv > /dev/null && eval "$(rbenv init -)"
+whence pyenv > /dev/null && eval "$(pyenv init -)"
