@@ -5,10 +5,7 @@ source $HOME/.dotfiles/zsh/colors.zsh
 source $HOME/.dotfiles/zsh/options.zsh
 source $HOME/.dotfiles/zsh/autocomplete.zsh
 source $HOME/.dotfiles/zsh/history.zsh
-
 source $HOME/.dotfiles/zsh/pzac-prompt.zsh
-#source $HOME/.dotfiles/zsh/powerline.zsh
-
 source $HOME/.dotfiles/zsh/misc.zsh
 source $HOME/.dotfiles/zsh/key-bindings.zsh
 
