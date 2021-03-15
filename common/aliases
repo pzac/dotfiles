@@ -25,7 +25,6 @@ alias g="git"
 alias gl="git pull --prune"
 alias gs="git status"
 
-alias psql="psql --pset pager=off"
 alias prettyjson="python -mjson.tool"
 
 alias f="foreman start"
