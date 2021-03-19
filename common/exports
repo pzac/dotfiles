@@ -17,3 +17,4 @@ export GOPATH=~/Go
 export HOMEBREW_NO_ANALYTICS=1
 export PYTHONSTARTUP=~/.pyrc
 export ERL_AFLAGS="-kernel shell_history enabled"
+export NVM_DIR=~/.nvm
