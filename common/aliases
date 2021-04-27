@@ -28,12 +28,12 @@ alias gs="git status"
 alias prettyjson="python -mjson.tool"
 
 alias f="foreman start"
-alias rr="bundle exec rake routes | grep"
-alias rc="bundle exec rails console"
-alias berc="bundle exec rails console"
-alias bers="bundle exec rails server"
-alias berm="bundle exec rails db:migrate"
-alias bertp="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bundle exec rails db:test:prepare"
+alias rr="bin/rails routes | grep"
+alias rc="bin/rails console"
+alias berc="bin/rails console"
+alias bers="bin/rails server"
+alias berm="bin/rails db:migrate"
+alias bertp="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bin/rails db:test:prepare"
 #alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
 
 alias features="bundle exec rspec --tag js --format documentation"
