@@ -12,4 +12,4 @@ source $HOME/.dotfiles/zsh/key-bindings.zsh
 export PATH="$HOME/.rbenv/bin:$PATH"
 whence rbenv > /dev/null && eval "$(rbenv init -)"
 whence pyenv > /dev/null && eval "$(pyenv init -)"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+# [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
