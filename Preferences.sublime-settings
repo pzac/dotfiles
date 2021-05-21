@@ -1,103 +1,51 @@
 {
-	"auto_complete_commit_on_tab": true,
-	"bold_folder_labels": true,
-	"caret_style": "phase",
-	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
-	"detect_indentation": false,
-	"detect_slow_plugins": false,
-	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
-	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		"*.log",
-		"tags",
 		"*.DS_Store",
-		"*.sublime-workspace",
-		".tags",
-		".tags_sorted_by_file",
-		".tmtags",
-		"*.tmproj",
 		"*.sqlite3",
-		"*.eps",
 		"*.min.js",
-		"*.svg",
 		"*.xlsx",
 		"*.xls"
 	],
-	"find_selected_text": true,
-	"fold_buttons": true,
+	/*"find_selected_text": true,*/
 	"folder_exclude_patterns":
 	[
 		"node_modules",
-		".sass-cache",
 		".git",
-		".yardoc",
-		"tmp",
-		"db/old_migrate",
-		"solr/data",
-		"solr/pids",
 		"coverage"
 	],
-	"font_face": "Ubuntu Mono",
-	"font_options":
-	[
-		"subpixel_antialias",
-		"no_round"
-	],
-	"font_size": 15,
 	"fonts_list":
 	[
 		"Operator Mono",
 		"Input Mono",
 		"Ubuntu Mono",
-		"Menlo",
-		"Source Code Pro",
-		"Fira Mono",
-		"mononoki",
-		"Cousine"
+		"Fantasque Sans Mono",
 	],
-	"gutter": true,
-	"highlight_line": true,
-	"hot_exit": false,
-	"ignored_packages":
-	[
-		"AdvancedNewFile",
-		"Markdown",
-		"Rust",
-		"Vintage"
+	"font_options": [
+		"no_liga",
+		"no_clig",
+		"no_calt"
 	],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
-	"itg_sidebar_tree_small": true,
-	"line_numbers": true,
-	"line_padding_bottom": 0,
-	"line_padding_top": 0,
-	"open_files_in_new_window": true,
-	"phoenix_color_blue": true,
-	"remember_open_files": false,
+	/*"hot_exit": "disabled",*/
 	"rulers":
 	[
 		78,
 		100
 	],
 	"save_on_focus_lost": true,
-	"scroll_past_end": false,
-	"show_definitions": false,
-	"show_full_path": true,
-	"sidebar_size_14": true,
-	"soda_classic_tabs": true,
-	"status_bar_brighter": true,
-	"tab_size": 2,
-	"tabs_small": true,
-	"theme": "Adaptive.sublime-theme",
-	"theme_primer_sidebar_tree_xsmall": true,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true,
-	"word_wrap": true
+	/*"show_full_path": true,*/
+	/*"translate_tabs_to_spaces": true,*/
+	/*"trim_trailing_white_space_on_save": "all",*/
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"font_face": "Fantasque Sans Mono",
+	"font_size": 16,
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"word_wrap": "auto",
+	"close_windows_when_empty": true,
 }
