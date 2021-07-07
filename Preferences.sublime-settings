@@ -35,15 +35,15 @@
 		100
 	],
 	"save_on_focus_lost": true,
-	/*"show_full_path": true,*/
-	/*"translate_tabs_to_spaces": true,*/
-	/*"trim_trailing_white_space_on_save": "all",*/
+	"show_full_path": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": "all",
 	"ignored_packages":
 	[
 		"Vintage",
 	],
 	"font_face": "Fantasque Sans Mono",
-	"font_size": 16,
+	"font_size": 14,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"word_wrap": "auto",
