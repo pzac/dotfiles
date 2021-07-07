@@ -10,5 +10,8 @@ Procfile.pz.*
 pz-console
 pz-server
 pz-test
+pz-test-1
 pz-runner
+PZ-NOTES.*
+PZ-TODO.*
 
