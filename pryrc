@@ -1,4 +1,5 @@
 Pry.config.pager = false
+Pry.config.history_file = ".pry_history"
 
 def benchmark_time(repetitions = 100, &block)
   require 'benchmark'
