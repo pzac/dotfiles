@@ -14,5 +14,5 @@ pz-test-1
 pz-runner
 PZ-NOTES.*
 PZ-TODO.*
-
+.tool-versions
 .pry_history

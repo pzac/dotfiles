@@ -9,6 +9,8 @@ source $HOME/.dotfiles/zsh/pzac-prompt.zsh
 source $HOME/.dotfiles/zsh/misc.zsh
 source $HOME/.dotfiles/zsh/key-bindings.zsh
 
+source $HOME/.asdf/asdf.sh
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 whence rbenv > /dev/null && eval "$(rbenv init -)"
 whence pyenv > /dev/null && eval "$(pyenv init -)"
