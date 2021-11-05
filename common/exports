@@ -1,12 +1,9 @@
 _PATHS=binstubs:bin:~/bin
-_PATHS=$_PATHS:/usr/local/bin:/usr/local/sbin
 _PATHS=$_PATHS:/opt/local/bin:/opt/local/sbin
+_PATHS=$_PATHS:/usr/local/bin:/usr/local/sbin
 _PATHS=$_PATHS:~/.rbenv/bin
 _PATHS=$_PATHS:/usr/local/share/npm/bin
 _PATHS=$_PATHS:/usr/local/heroku/bin
-_PATHS=$_PATHS:~/Go/bin
-_PATHS=$_PATHS:/usr/local/opt/postgresql@9.5/bin
-_PATHS=$_PATHS:/usr/local/opt/node@8/bin
 
 export PATH=$_PATHS:$PATH
 export EDITOR="subl -w"
@@ -14,9 +11,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=~/Go
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_INSTALL_CLEANUP=1
 export PYTHONSTARTUP=~/.pyrc
 export ERL_AFLAGS="-kernel shell_history enabled"
 export NVM_DIR=~/.nvm
