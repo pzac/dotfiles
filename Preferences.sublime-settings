@@ -28,14 +28,17 @@
 		"no_clig",
 		"no_calt"
 	],
-	/*"hot_exit": "disabled",*/
+	"hot_exit": "disabled",
+	"remember_workspace": false,
 	"rulers":
 	[
 		78,
 		100
 	],
+	"highlight_line": true,
 	"save_on_focus_lost": true,
 	"show_full_path": true,
+	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": "all",
 	"ignored_packages":
@@ -43,9 +46,11 @@
 		"Vintage",
 	],
 	"font_face": "Fantasque Sans Mono",
-	"font_size": 14,
+	"font_size": 15,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"word_wrap": "auto",
 	"close_windows_when_empty": true,
+	"color_scheme": "Nord.sublime-color-scheme",
+	"auto_complete_include_snippets_when_typing": false,
 }
