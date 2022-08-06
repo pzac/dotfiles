@@ -7,11 +7,7 @@ binstubs/
 .DS_Store
 Procfile.pz
 Procfile.pz.*
-pz-console
-pz-server
-pz-test
-pz-test-1
-pz-runner
+pz-*
 PZ-NOTES.*
 PZ-TODO.*
 .tool-versions
