@@ -28,7 +28,7 @@ alias gs="git status"
 alias prettyjson="python -mjson.tool"
 
 alias f="foreman start"
-alias rr="bin/rails routes | grep"
+alias rr="bin/rails routes | fzf"
 alias rc="bin/rails console"
 alias berc="bin/rails console"
 alias bers="bin/rails server"
