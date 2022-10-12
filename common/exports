@@ -1,9 +1,7 @@
-_PATHS=binstubs:bin:~/bin
+_PATHS=~/bin
 _PATHS=$_PATHS:/opt/local/bin:/opt/local/sbin
 _PATHS=$_PATHS:/usr/local/bin:/usr/local/sbin
-_PATHS=$_PATHS:~/.rbenv/bin
-_PATHS=$_PATHS:/usr/local/share/npm/bin
-_PATHS=$_PATHS:/usr/local/heroku/bin
+_PATHS=$_PATHS:~/.cargo/bin
 
 export PATH=$_PATHS:$PATH
 export EDITOR="subl -w"
