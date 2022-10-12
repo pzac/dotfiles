@@ -15,9 +15,6 @@ alias tlf="tail -f"
 alias b="bundle"
 alias be="bundle exec"
 
-alias cuc="bundle exec cucumber --require features"
-alias cuf="cucumber -f fuubar"
-
 alias memflush="echo 'flush_all' | nc localhost 11211"
 alias ttt="touch tmp/restart.txt"
 
@@ -25,17 +22,10 @@ alias g="git"
 alias gl="git pull --prune"
 alias gs="git status"
 
-alias prettyjson="python -mjson.tool"
-
 alias f="foreman start"
 alias rr="bin/rails routes | fzf"
-alias rc="bin/rails console"
 alias berc="bin/rails console"
 alias bers="bin/rails server"
 alias berm="bin/rails db:migrate"
 alias bertp="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bin/rails db:test:prepare"
 #alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
-
-alias features="bundle exec rspec --tag js --format documentation"
-alias cfeatures="DRIVER=selenium_chrome bundle exec rspec --tag js"
-alias ffeatures="DRIVER=selenium bundle exec rspec --tag js"
