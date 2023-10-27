@@ -14,7 +14,8 @@ end
 
 Pry.config.theme = "tomorrow-night"
 
-Pry.config.print = Pry::Inspector::MAP["clipped"][:value]
+Pry.config.print = Pry::Inspector::MAP["simple"][:value]
+Pry.config.print = Pry::Inspector::MAP["default"][:value]
 
 Pry::Prompt.add(
       :pzac,
@@ -33,3 +34,38 @@ Pry::Prompt.add(
       )
     end
 Pry.config.prompt = Pry::Prompt[:pzac]
+
+class Pry
+  class Command
+    class LoopInspector < Pry::ClassCommand
+      match 'loop-inspector'
+      group 'Input and Output'
+      description 'Use the next available inspector'
+
+      banner <<-BANNER
+        Use the next available inspector
+      BANNER
+
+      OPTIONS = Pry::Inspector::MAP.keys
+
+      def process
+        old_key = current
+        new_index = (OPTIONS.index(old_key) + 1) % OPTIONS.size
+        new_key = OPTIONS[new_index]
+
+        pry_instance.print = Pry::Inspector::MAP[new_key][:value]
+
+        output.puts "Switched from the '#{old_key}' to the '#{new_key}' inspector!"
+      end
+
+      def current
+        OPTIONS.find do |key|
+          pry_instance.print == Pry::Inspector::MAP[key][:value]
+        end
+      end
+    end
+
+  end
+end
+Pry::Commands.add_command(Pry::Command::LoopInspector)
+Pry.commands.alias_command 'iii', 'loop-inspector'
