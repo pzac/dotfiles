@@ -1,13 +1,15 @@
-source $HOME/.dotfiles/common/aliases
-source $HOME/.dotfiles/common/exports
+export DOTFILES_HOME=~/code/dotfiles
 
-source $HOME/.dotfiles/zsh/colors.zsh
-source $HOME/.dotfiles/zsh/options.zsh
-source $HOME/.dotfiles/zsh/autocomplete.zsh
-source $HOME/.dotfiles/zsh/history.zsh
-source $HOME/.dotfiles/zsh/pzac-prompt.zsh
-source $HOME/.dotfiles/zsh/misc.zsh
-source $HOME/.dotfiles/zsh/key-bindings.zsh
+source $DOTFILES_HOME/common/aliases
+source $DOTFILES_HOME/common/exports
+
+source $DOTFILES_HOME/zsh/colors.zsh
+source $DOTFILES_HOME/zsh/options.zsh
+source $DOTFILES_HOME/zsh/autocomplete.zsh
+source $DOTFILES_HOME/zsh/history.zsh
+source $DOTFILES_HOME/zsh/pzac-prompt.zsh
+source $DOTFILES_HOME/zsh/misc.zsh
+source $DOTFILES_HOME/zsh/key-bindings.zsh
 
 source $HOME/.asdf/asdf.sh
 
