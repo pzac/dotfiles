@@ -1,38 +1,17 @@
 My dotfiles. I've decided to rebuild my environment from scratch.
 
-## Tools
+## Sublime Text
 
-* pjson (`pip install pjson`)
+I've put my stuff in [this package](https://github.com/pzac/SublimePzac).
 
-### Homebrew recipes
+### Packages
 
-* httpie
-* rbenv
-* the_silver_searcher
-* tig
-* tree
-* cloc
-* graphviz
-
-## Sublime Text 3 Packages
-
-* Better CoffeeScript
 * ChangeQuotes
-* Colorsublime
-* Colorsublime - Themes
 * Comments Aware Enter
-* Cucumber
 * FontCycler
-* Git
-* GitGutter
-* Github Tools
-* nginx
 * Origami
-* Package Control
 * Pretty JSON
-* RSpec
 * Select Quoted
-* View In Browser
 * [titoBouzout/Tag](https://github.com/titoBouzout/Tag)
 
 ## Useful links
