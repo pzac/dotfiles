@@ -20,8 +20,6 @@ ln -sf "${HERE}/pryrc" ~/.pryrc
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   ln -sf "${HERE}/Preferences.sublime-settings"  ~/Library/Application\ Support/Sublime\ Text/Packages/User/
-  ln -sf "${HERE}/Default (OSX).sublime-keymap" ~/Library/Application\ Support/Sublime\ Text/Packages/User/
-  ln -sf "${HERE}/sublime/bp.sublime-snippet"  ~/Library/Application\ Support/Sublime\ Text/Packages/User/
   ln -sf "${HERE}/sublime/better-do-end.sublime-snippet"  ~/Library/Application\ Support/Sublime\ Text/Packages/User/
   ln -sf "${HERE}/sublime/Merge.sublime-theme"  ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
 fi
