@@ -1,73 +1,79 @@
 {
-	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
-	[
-		"*.log",
-		"*.DS_Store",
-		"*.sqlite3",
-		"*.min.js",
-		"*.xlsx",
-		"*.xls"
-	],
-	/*"find_selected_text": true,*/
-	"folder_exclude_patterns":
-	[
-		"node_modules",
-		".git",
-		"coverage"
-	],
-	"fonts_list":
-	[
-		"Operator Mono",
-		"Input Mono",
-		"Ubuntu Mono",
-		"Fantasque Sans Mono",
-	],
-	"font_options": [
-		"no_liga",
-		"no_clig",
-		"no_calt"
-	],
-	"hot_exit": "disabled",
-	"remember_workspace": false,
-	"rulers":
-	[
-		78,
-		100
-	],
-	"highlight_line": true,
-	"save_on_focus_lost": true,
-	"show_full_path": true,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": "all",
-	"ignored_packages":
-	[
-		"Vintage",
-	],
-	"font_face": "Fantasque Sans Mono",
-	"font_size": 16,
-	"line_padding_bottom": 0,
-	"line_padding_top": 0,
-	"word_wrap": "auto",
-	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night-Blue.tmTheme",
-	"auto_complete_include_snippets_when_typing": true,
-	"binary_file_patterns":
-	[
-		"*.dds",
-		"*.eot",
-		"*.gif",
-		"*.ico",
-		"*.jar",
-		"*.jpeg",
-		"*.jpg",
-		"*.pdf",
-		"*.png",
-		"*.swf",
-		"*.tga",
-		"*.ttf",
-		"*.zip",
-		"tmp/**"
-	],
+    "auto_complete_include_snippets_when_typing": true,
+    "binary_file_patterns":
+    [
+        "*.dds",
+        "*.eot",
+        "*.gif",
+        "*.ico",
+        "*.jar",
+        "*.jpeg",
+        "*.jpg",
+        "*.pdf",
+        "*.png",
+        "*.swf",
+        "*.tga",
+        "*.ttf",
+        "*.zip",
+        "tmp/**"
+    ],
+    "close_windows_when_empty": true,
+    "color_scheme": "Packages/SublimePzac/SublimePzac.tmTheme",
+    "enable_tab_scrolling": false,
+    "ensure_newline_at_eof_on_save": true,
+    "file_exclude_patterns":
+    [
+        "*.log",
+        "*.DS_Store",
+        "*.sqlite3",
+        "*.min.js",
+        "*.xlsx",
+        "*.xls"
+    ],
+    "folder_exclude_patterns":
+    [
+        "node_modules",
+        ".git",
+        "coverage"
+    ],
+    "font_face": "Fantasque Sans Mono",
+    "font_options":
+    [
+        "no_liga",
+        "no_clig",
+        "no_calt"
+    ],
+    "font_size": 16,
+    "fonts_list":
+    [
+        "Operator Mono",
+        "Input Mono",
+        "Ubuntu Mono",
+        "Fantasque Sans Mono"
+    ],
+    "highlight_line": true,
+    "hot_exit": "disabled",
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "index_files": true,
+    "line_padding_bottom": 0,
+    "line_padding_top": 0,
+    "remember_workspace": false,
+    "rulers":
+    [
+        78,
+        100
+    ],
+    "save_on_focus_lost": true,
+    "show_encoding": true,
+    "show_full_path": true,
+    "show_line_column": "compact",
+    "show_rel_path": true,
+    "show_tab_close_buttons_on_left": true,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": "all",
+    "word_wrap": "auto"
 }
