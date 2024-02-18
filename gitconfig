@@ -6,7 +6,6 @@
   ci = commit
   co = checkout
   com = checkout master
-  cod = checkout develop
   br = branch
   rh = reset --hard
   cp = cherry-pick
@@ -16,12 +15,8 @@
   rem = rebase master
   riom = rebase -i origin/master
   reom = rebase origin/master
-  riod = rebase -i origin/develop
-  reod = rebase origin/develop
   me = merge
   ri = rebase -i
-  pl = pull
-  ps = push
   pf = push --force-with-lease
   puhs = push
   h1 = log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
