@@ -21,6 +21,7 @@ alias ttt="touch tmp/restart.txt"
 alias g="git"
 alias gl="git pull --prune"
 alias gs="git status"
+alias gr="git reflog | grep checkout | cut -w -f 8 | uniq | head -n 5"
 
 alias f="foreman start"
 alias rr="bin/rails routes | fzf"
