@@ -27,6 +27,7 @@
   wc = whatchanged
   wd = diff --word-diff
   remotes = remote -v
+  dft = difftool
 [user]
 	name = Paolo Zaccagnini
 	email = paolo@pzac.net
@@ -51,11 +52,13 @@
 [mergetool]
   keepBackup = true
 [diff]
-  tool = opendiff
+  tool = difftastic
 [difftool]
   prompt = false
 [difftool "opendiff"]
   cmd = /usr/bin/opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\" | cat
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
 [advice]
   pushNonFastForward = false
   statusHints = false
