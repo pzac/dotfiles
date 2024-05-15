@@ -30,3 +30,6 @@ alias bers="bin/rails server"
 alias berm="bin/rails db:migrate"
 alias bertp="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bin/rails db:test:prepare"
 #alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
+
+# delete local branches where the upstream is gone
+alias gclean="git branch -vv | grep ': gone]' | awk '{print \$1}' | xargs git branch -D"
