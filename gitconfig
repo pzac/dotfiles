@@ -33,6 +33,7 @@
 	email = paolo@pzac.net
 [push]
 	default = tracking
+	useForceIfIncludes = true
 [branch]
   autosetuprebase = always
 [color]
@@ -76,3 +77,5 @@
 	defaultbranch = master
 [rebase]
 	updateRefs = true
+[remote "origin"]
+  prune = true
