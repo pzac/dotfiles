@@ -30,3 +30,4 @@ end
 ARGV.concat [ "--readline", "--simple-prompt" ]
 IRB.conf[:SAVE_HISTORY] = 10000
 IRB.conf[:USE_AUTOCOMPLETE] = false
+IRB.conf[:PROMPT_MODE] = :SIMPLE
