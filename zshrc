@@ -13,8 +13,10 @@ source $DOTFILES_HOME/zsh/key-bindings.zsh
 
 source $HOME/.asdf/asdf.sh
 
-source /opt/local/share/fzf/shell/key-bindings.zsh
-source /opt/local/share/fzf/shell/completion.zsh
+if [ -d /opt/local/share/fzf/shell ]; then
+  source /opt/local/share/fzf/shell/key-bindings.zsh
+  source /opt/local/share/fzf/shell/completion.zsh
+fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 whence rbenv > /dev/null && eval "$(rbenv init -)"
