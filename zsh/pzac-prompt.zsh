@@ -1,6 +1,6 @@
 source $DOTFILES_HOME/zsh/git-prompt.zsh
 
-POWERLINE=1
+POWERLINE=0
 
 RESET="$reset_color"
 
