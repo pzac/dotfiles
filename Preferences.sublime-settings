@@ -43,7 +43,7 @@
         "no_clig",
         "no_calt"
     ],
-    "font_size": 16,
+    "font_size": 18,
     "fonts_list":
     [
         "Operator Mono",
@@ -55,7 +55,7 @@
     "hot_exit": "disabled",
     "ignored_packages":
     [
-        "Vintage"
+        "Vintage",
     ],
     "index_files": true,
     "line_padding_bottom": 0,
@@ -75,5 +75,6 @@
     "tab_size": 2,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": "all",
-    "word_wrap": "auto"
+    "word_wrap": "auto",
+    "update_check": false,
 }
