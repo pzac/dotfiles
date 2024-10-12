@@ -12,7 +12,6 @@ ln -sf "${HERE}/tmux".conf ~/.tmux.conf
 ln -sf "${HERE}/vimrc" ~/.vimrc
 ln -sf "${HERE}/zshrc" ~/.zshrc
 ln -sf "${HERE}/ackrc" ~/.ackrc
-ln -sf "${HERE}/vim" ~/.vim
 ln -sf "${HERE}/psqlrc" ~/.psqlrc
 ln -sf "${HERE}/pryrc" ~/.pryrc
 

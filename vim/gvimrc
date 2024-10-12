@@ -1,8 +1,0 @@
-set guioptions-=T
-set guifont=Ubuntu_Mono:h14
-"set guifont=Ubuntu_Mono\ bold:h14
-"set guifont=Liberation_Mono:h14
-"set guifont=EnvyCodeR:h14
-"set noanti
-"set guifont=Monaco:h10
-set noeb

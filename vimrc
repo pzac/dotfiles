@@ -49,20 +49,11 @@ set undolevels=1000
 cmap w!! %!sudo tee > /dev/null %
 
 " === whitespace ===
-autocmd BufWritePre *.rb :%s/\s\+$//e " remove trailing spaces on ruby files
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR> " F5 removes trailing whitespace
 
 " === file ignore settings ===
 set wildignore+=*/.git
-set wildignore+=tmp/**,vendor/*,*/.sass-cache/*
 set wildignore+=*.png,*.gif,*.jpg
-
-" === filetypes ===
-au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,config.ru}    set ft=ruby
-
-" === snippets ===
-" ctrl-l to insert ruby's hash rocket =>
-imap <C-l> <Space>=><Space>
 
 " mouse scroll support
 set mouse=
