@@ -11,13 +11,6 @@ source $DOTFILES_HOME/zsh/pzac-prompt.zsh
 source $DOTFILES_HOME/zsh/misc.zsh
 source $DOTFILES_HOME/zsh/key-bindings.zsh
 
-
-if [ -d /opt/local/share/fzf/shell ]; then
-  source /opt/local/share/fzf/shell/key-bindings.zsh
-  source /opt/local/share/fzf/shell/completion.zsh
-fi
-
-
 # ASDF
 #
 # if [ -d "$HOME/.asdf" ]; then
