@@ -1,5 +1,0 @@
-#!/bin/sh
-artist=`osascript -e 'tell application "iTunes" to artist of current track as string'`
-album=`osascript -e 'tell application "iTunes" to album of current track as string'`
-track=`osascript -e 'tell application "iTunes" to name of current track as string'`
-echo "Playing $artist:  $track ($album)"
