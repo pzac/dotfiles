@@ -3,7 +3,6 @@
 binstubs/
 *.sublime-project
 *.sublime-workspace
-.byebug_history
 .DS_Store
 Procfile.pz
 Procfile.pz.*
@@ -12,3 +11,5 @@ PZ-NOTES.*
 PZ-TODO.*
 .tool-versions
 .pry_history
+.byebug_history
+.ruby_console_history
