@@ -26,8 +26,6 @@
   fe = fetch
   wc = whatchanged
   wd = diff --word-diff
-  ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
-  theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
   remotes = remote -v
 [user]
 	name = Paolo Zaccagnini
@@ -42,20 +40,12 @@
   branch = auto
 [format]
   pretty = oneline
-[apply]
-  # ignorewhitespace = change
-  # whitespace = fix
-[help]
-  # autocorrect = 1
 [merge]
   tool = opendiff
-  #conflictstyle = diff3
 [core]
   quotepath = false
   excludesfile = /Users/pzac/.gitignore_global
-  # whitespace=trailing-space,cr-at-eol
-	pager = cat
-	# pager = diff-so-fancy
+  pager = cat
 [heroku]
   account = personal
 [mergetool]
@@ -73,15 +63,11 @@
   resolveConflict = true
   implicitIdentity = false
   detachedHead = false
-[help]
-  #format = web
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
 [rerere]
 	enabled = 1
-[url "ssh://git@heroku.com/"]
-	insteadOf = https://git.heroku.com/
 [init]
 	defaultbranch = master
