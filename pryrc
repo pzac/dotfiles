@@ -1,5 +1,5 @@
 Pry.config.pager = false
-Pry.config.history_file = ".pry_history"
+Pry.config.history_file = ".ruby_console_history"
 
 def benchmark_time(repetitions = 100, &block)
   require 'benchmark'
@@ -10,7 +10,6 @@ def subl(content, filename='debug.txt')
   File.open(filename, 'w') { |f| f.write(content) }
   `subl #{filename}`
 end
-
 
 Pry.config.theme = "tomorrow-night"
 

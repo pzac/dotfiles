@@ -1,6 +1,5 @@
 require 'rubygems'
 
-
 class Object
   def local_methods
     (methods - Object.instance_methods).sort
@@ -14,7 +13,7 @@ end
 def gethtml(options = {})
   url = app.url_for(options)
   app.get(url)
-  app.html_document.root.to_s    
+  app.html_document.root.to_s
 end
 
 def mate(content, filename='debug.txt')
@@ -29,5 +28,6 @@ end
 
 ARGV.concat [ "--readline", "--simple-prompt" ]
 IRB.conf[:SAVE_HISTORY] = 10000
+IRB.conf[:HISTORY_FILE] = '.ruby_console_history'
 IRB.conf[:USE_AUTOCOMPLETE] = false
 IRB.conf[:PROMPT_MODE] = :SIMPLE
