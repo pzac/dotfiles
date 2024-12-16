@@ -13,7 +13,6 @@ end
 
 Pry.config.theme = "tomorrow-night"
 
-Pry.config.print = Pry::Inspector::MAP["simple"][:value]
 Pry.config.print = Pry::Inspector::MAP["default"][:value]
 
 Pry::Prompt.add(
