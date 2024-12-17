@@ -21,11 +21,16 @@ zmodload -i zsh/complist
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path $ZSH/cache/
 
+# process completion
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
+zstyle ':completion:*:*:*:*:processes' command "ps -u `whoami` -o pid,user,comm -w -w"
+
+# complete also partial matches
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 
 # Stuff we can probaby do without
 # unsetopt flowcontrol
-# setopt complete_in_word
 
 # should this be in keybindings?
 # bindkey -M menuselect '^o' accept-and-infer-next-history
@@ -41,19 +46,5 @@ zstyle ':completion::complete:*' cache-path $ZSH/cache/
 
 # zstyle ':completion:*' list-colors ''
 # zstyle ':completion:*:*:*:*:*' menu select
-# zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
-# zstyle ':completion:*:*:*:*:processes' command "ps -u `whoami` -o pid,user,comm -w -w"
-# disable named-directories autocompletion
-# zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-directories
 
-# zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-# if [ "x$COMPLETION_WAITING_DOTS" = "xtrue" ]; then
-#   expand-or-complete-with-dots() {
-#     echo -n "\e[31m......\e[0m"
-#     zle expand-or-complete
-#     zle redisplay
-#   }
-#   zle -N expand-or-complete-with-dots
-#   bindkey "^I" expand-or-complete-with-dots
-# fi
+zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-directories
