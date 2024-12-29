@@ -19,6 +19,7 @@ mkdir -p ~/.config/
 ln -sf "${HERE}/starship.toml" ~/.config/starship.toml
 
 mkdir -p ~/.config/ghostty
+ln -sf "${HERE}/ghostty/config" ~/.config/ghostty/config
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   ln -sf "${HERE}/Preferences.sublime-settings"  ~/Library/Application\ Support/Sublime\ Text/Packages/User/
