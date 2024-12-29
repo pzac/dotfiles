@@ -6,7 +6,7 @@ source $DOTFILES_HOME/common/exports
 source $DOTFILES_HOME/zsh/colors.zsh
 source $DOTFILES_HOME/zsh/options.zsh
 source $DOTFILES_HOME/zsh/autocomplete.zsh
-source $DOTFILES_HOME/zsh/history.zsh
+# source $DOTFILES_HOME/zsh/history.zsh
 # source $DOTFILES_HOME/zsh/pzac-prompt.zsh
 source $DOTFILES_HOME/zsh/misc.zsh
 source $DOTFILES_HOME/zsh/key-bindings.zsh
@@ -37,3 +37,7 @@ whence mise > /dev/null && eval "$(mise activate zsh)"
 # Starship (prompt)
 #
 eval "$(starship init zsh)"
+
+# Atuin (history)
+#
+eval "$(atuin init zsh)"

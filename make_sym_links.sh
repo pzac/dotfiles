@@ -21,6 +21,9 @@ ln -sf "${HERE}/starship.toml" ~/.config/starship.toml
 mkdir -p ~/.config/ghostty
 ln -sf "${HERE}/ghostty/config" ~/.config/ghostty/config
 
+mkdir -p ~/.config/atuin
+ln -sf "${HERE}/atuin/config.toml" ~/.config/atuin/config.toml
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
   ln -sf "${HERE}/Preferences.sublime-settings"  ~/Library/Application\ Support/Sublime\ Text/Packages/User/
   ln -sf "${HERE}/sublime/Merge.sublime-theme"  ~/Library/Application\ Support/Sublime\ Merge/Packages/User/
