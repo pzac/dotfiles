@@ -4,3 +4,5 @@ window-padding-balance = true
 # macos-titlebar-style = hidden
 background = 1c2021
 foreground = d4be98
+window-theme = light
+macos-titlebar-style = native
