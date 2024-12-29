@@ -15,6 +15,10 @@ ln -sf "${HERE}/ackrc" ~/.ackrc
 ln -sf "${HERE}/psqlrc" ~/.psqlrc
 ln -sf "${HERE}/pryrc" ~/.pryrc
 
+mkdir -p ~/.config/
+ln -sf "${HERE}/starship.toml" ~/.config/starship.toml
+
+mkdir -p ~/.config/ghostty
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   ln -sf "${HERE}/Preferences.sublime-settings"  ~/Library/Application\ Support/Sublime\ Text/Packages/User/
