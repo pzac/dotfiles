@@ -6,3 +6,13 @@ background = 1c2021
 foreground = d4be98
 window-theme = light
 macos-titlebar-style = native
+font-family = Fantasque Sans Mono
+
+
+keybind = super+left=goto_split:left
+keybind = super+right=goto_split:right
+keybind = super+up=goto_split:top
+keybind = super+down=goto_split:bottom
+
+keybind = super+alt+right=next_tab
+keybind = super+alt+left=previous_tab
