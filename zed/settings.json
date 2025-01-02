@@ -22,6 +22,7 @@
     // Disable ligatures:
     "calt": false
   },
+  "buffer_font_family": "Fantasque Sans Mono",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
