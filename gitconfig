@@ -1,6 +1,6 @@
 [alias]
   s = status
-  st = status -sb
+  st = status -sb -unormal
   sta = stash
   pop = stash pop
   ci = commit
