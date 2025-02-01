@@ -1,0 +1,22 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "cmd-shift-r": "editor::CopyRelativePath",
+      "cmd-ctrl-r": "pane::RevealInProjectPanel",
+      "cmd-alt-1": "pane::JoinAll",
+      "cmd-k 1": ["workspace::MoveItemToPane", { "destination": 0 }],
+      "cmd-k 2": ["workspace::MoveItemToPane", { "destination": 1 }],
+      "cmd-k 3": ["workspace::MoveItemToPane", { "destination": 2 }],
+      "cmd-k 4": ["workspace::MoveItemToPane", { "destination": 3 }]
+    }
+  }
+]

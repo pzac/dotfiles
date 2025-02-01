@@ -26,6 +26,7 @@ ln -sf "${HERE}/atuin/config.toml" ~/.config/atuin/config.toml
 
 mkdir -p ~/.config/zed
 ln -sf "${HERE}/zed/settings.json" ~/.config/zed/settings.json
+ln -sf "${HERE}/zed/keymap.json" ~/.config/zed/keymap.json
 ln -sf "${HERE}/zed/snippets" ~/.config/zed/snippets
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
