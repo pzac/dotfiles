@@ -37,6 +37,7 @@
 	autoSetupRemote = true
 [branch]
   autosetuprebase = always
+	sort = -committerdate
 [color]
   status = auto
   diff = auto
@@ -55,6 +56,10 @@
   keepBackup = true
 [diff]
   tool = difftastic
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [difftool]
   prompt = false
 [difftool "opendiff"]
@@ -78,5 +83,17 @@
 	defaultbranch = master
 [rebase]
 	updateRefs = true
+	autoSquash = true
+	autoStash = true
 [remote "origin"]
   prune = true
+[column]
+	ui = auto
+[tag]
+	sort = version:refname
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[pull]
+	rebase = true
