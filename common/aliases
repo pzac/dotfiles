@@ -20,13 +20,13 @@ alias ttt="touch tmp/restart.txt"
 
 alias g="git"
 alias gl="git pull --prune"
-alias gs="git status"
 alias gr="git reflog | grep checkout | cut -w -f 8 | uniq | head -n 5"
 
 alias f="foreman start"
 alias rr="bin/rails routes | fzf"
 alias berc="bin/rails console"
 alias bers="bin/rails server"
+alias bert="bin/rails test"
 alias berm="bin/rails db:migrate"
 alias bertp="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bin/rails db:test:prepare"
 #alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'
