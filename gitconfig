@@ -28,15 +28,20 @@
   wd = diff --word-diff
   remotes = remote -v
   dft = difftool
+    # shortcut for something like `git empty "Empty commit"`
+    empty = "git commit --allow-empty"
 [user]
 	name = Paolo Zaccagnini
 	email = paolo@pzac.net
 [push]
-	default = tracking
+    # by default pushes the current branch to the same name on the remote. Alternative: tracking
+	default = simple
 	useForceIfIncludes = true
+	# If the upstream is not set, it will automatically set it
 	autoSetupRemote = true
 [branch]
   autosetuprebase = always
+    # sort branches by committer date
 	sort = -committerdate
 [color]
   status = auto
@@ -49,16 +54,21 @@
 [core]
   quotepath = false
   excludesfile = /Users/pzac/.gitignore_global
-  pager = cat
+    # I hate less
+    pager = cat
 [heroku]
   account = personal
 [mergetool]
   keepBackup = true
 [diff]
   tool = difftastic
+    # this algorithm works better
 	algorithm = histogram
+	# different color for moved lines
 	colorMoved = plain
+	# i(ndex) w(orking directory) c(ommit) instead of a & b
 	mnemonicPrefix = true
+	# detect renames
 	renames = true
 [difftool]
   prompt = false
@@ -88,8 +98,10 @@
 [remote "origin"]
   prune = true
 [column]
-	ui = auto
+    # use columns in output
+	# ui = auto
 [tag]
+    # better sorting
 	sort = version:refname
 [fetch]
 	prune = true
