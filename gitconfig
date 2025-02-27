@@ -1,99 +1,96 @@
 [alias]
-  s = status
-  st = status -sb -unormal
-  sta = stash
-  pop = stash pop
-  ci = commit
-  co = checkout
-  com = checkout master
-  br = branch
-  rh = reset --hard
-  cp = cherry-pick
-  re = rebase
-  rea = rebase --abort
-  rec = rebase --continue
-  rem = rebase master
-  riom = rebase -i origin/master
-  reom = rebase origin/master
-  me = merge
-  ri = rebase -i
-  pf = push --force-with-lease
-  puhs = push
-  h1 = log --graph --pretty=format:'%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
-  h2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  h3 = log --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph
-  hh = !git h3 -20
-  fe = fetch
-  wc = whatchanged
-  wd = diff --word-diff
-  remotes = remote -v
-  dft = difftool
+    s = status
+    st = status -sb -unormal
+    sta = stash
+    pop = stash pop
+    ci = commit
+    co = checkout
+    com = checkout master
+    br = branch
+    rh = reset --hard
+    cp = cherry-pick
+    re = rebase
+    rea = rebase --abort
+    rec = rebase --continue
+    rem = rebase master
+    riom = rebase -i origin/master
+    reom = rebase origin/master
+    me = merge
+    ri = rebase -i
+    pf = push --force-with-lease
+    puhs = push
+    h3 = log --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph
+    hh = !git h3 -20
+    fe = fetch
+    wc = whatchanged
+    wd = diff --word-diff
+    dft = difftool
     # shortcut for something like `git empty "Empty commit"`
-    empty = "git commit --allow-empty"
+    empty = commit --allow-empty
 [user]
-	name = Paolo Zaccagnini
-	email = paolo@pzac.net
+    name = Paolo Zaccagnini
+    email = paolo@pzac.net
 [push]
     default = tracking
-	useForceIfIncludes = true
-	# If the upstream is not set, it will automatically set it
-	autoSetupRemote = true
+    useForceIfIncludes = true
+    # If the upstream is not set, it will automatically set it
+    autoSetupRemote = true
 [branch]
-  autosetuprebase = always
+    autosetuprebase = always
     # sort branches by committer date
-	sort = -committerdate
+    sort = -committerdate
 [color]
-  status = auto
-  diff = auto
-  branch = auto
+    status = auto
+    diff = auto
+    branch = auto
 [format]
-  pretty = oneline
+    pretty = oneline
 [merge]
-  tool = opendiff
+    tool = opendiff
 [core]
-  quotepath = false
-  excludesfile = /Users/pzac/.gitignore_global
+    quotepath = false
+    excludesfile = /Users/pzac/.gitignore_global
     # I hate less
     pager = cat
 [heroku]
-  account = personal
+    account = personal
 [mergetool]
-  keepBackup = true
+    keepBackup = true
 [diff]
-  tool = difftastic
+    tool = difftastic
     # this algorithm works better
-	algorithm = histogram
-	# different color for moved lines
-	colorMoved = plain
-	# i(ndex) w(orking directory) c(ommit) instead of a & b
-	mnemonicPrefix = true
-	# detect renames
-	renames = true
+    algorithm = histogram
+    # different color for moved lines
+    colorMoved = plain
+    # i(ndex) w(orking directory) c(ommit) instead of a & b
+    mnemonicPrefix = true
+    # detect renames
+    renames = true
 [difftool]
-  prompt = false
+    prompt = false
 [difftool "opendiff"]
-  cmd = /usr/bin/opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\" | cat
+    cmd = /usr/bin/opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$MERGED\" | cat
 [difftool "difftastic"]
-  cmd = difft "$LOCAL" "$REMOTE"
+    cmd = difft "$LOCAL" "$REMOTE"
 [advice]
-  pushNonFastForward = false
-  statusHints = false
-  commitBeforeMerge = false
-  resolveConflict = true
-  implicitIdentity = false
-  detachedHead = false
+    pushNonFastForward = false
+    statusHints = false
+    commitBeforeMerge = false
+    resolveConflict = true
+    implicitIdentity = false
+    detachedHead = false
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
 [rerere]
-	enabled = 1
+    enabled = 1
 [init]
-	defaultbranch = master
+    defaultbranch = master
 [rebase]
-	updateRefs = true
+    updateRefs = true
 [remote "origin"]
-  prune = true
+    prune = true
 [tag]
     # better sorting
-	sort = version:refname
+    sort = version:refname
