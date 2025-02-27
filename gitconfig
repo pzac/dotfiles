@@ -34,8 +34,7 @@
 	name = Paolo Zaccagnini
 	email = paolo@pzac.net
 [push]
-    # by default pushes the current branch to the same name on the remote. Alternative: tracking
-	default = simple
+    default = tracking
 	useForceIfIncludes = true
 	# If the upstream is not set, it will automatically set it
 	autoSetupRemote = true
@@ -93,19 +92,8 @@
 	defaultbranch = master
 [rebase]
 	updateRefs = true
-	autoSquash = true
-	autoStash = true
 [remote "origin"]
   prune = true
-[column]
-    # use columns in output
-	# ui = auto
 [tag]
     # better sorting
 	sort = version:refname
-[fetch]
-	prune = true
-	pruneTags = true
-	all = true
-[pull]
-	rebase = true
