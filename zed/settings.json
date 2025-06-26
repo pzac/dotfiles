@@ -7,26 +7,47 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "assistant": {
+  "agent": {
+    "play_sound_when_agent_done": true,
     "default_model": {
-      "provider": "ollama",
-      "model": "llama3.1:latest"
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet"
     },
     "version": "2"
   },
-  "theme": "Atelier Sulphurpool Dark",
   "autosave": "on_focus_change",
-  // "base_keymap": "SublimeText",
-  "buffer_font_size": 15,
+  "buffer_font_family": "FantasqueSansM Nerd Font",
   "buffer_font_features": {
     // Disable ligatures:
     "calt": false
   },
-  "buffer_font_family": "Fantasque Sans Mono",
+  "buffer_font_size": 15,
+  "edit_predictions": {
+    "disabled_globs": ["*.log"],
+    "enabled_in_text_threads": false,
+    "mode": "subtle"
+  },
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": [
+        "ruby-lsp",
+        "!solargraph",
+        "!rubocop",
+        "!sorbet",
+        "!steep",
+        "..."
+      ]
+    }
+  },
+  "show_whitespaces": "selection",
+  "soft_wrap": "editor_width",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "soft_wrap": "editor_width",
+  "theme": "Gruvbox Dark",
   "ui_font_family": "B612"
 }
