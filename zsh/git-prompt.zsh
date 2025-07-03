@@ -60,8 +60,3 @@ git_prompt_string() {
 local git_where="$(parse_git_branch)"
 [ -n "$git_where" ] && echo "[$(parse_git_state)](${git_where#(refs/heads/|tags/)})"
 }
-
-powerline_git_prompt_string() {
-local git_where="$(parse_git_branch)"
-[ -n "$git_where" ] && echo " \uE0A0 ${git_where#(refs/heads/|tags/)}%F{195} $(parse_git_state)"
-}
