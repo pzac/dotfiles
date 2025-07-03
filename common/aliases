@@ -4,7 +4,6 @@ alias mv="mv -iv"
 alias rm="rm -iv"
 alias ll="ls -Al"
 alias la="ls -a"
-alias sl=ls
 
 alias cd..="cd .."
 alias c="cd .."
@@ -15,14 +14,9 @@ alias tlf="tail -f"
 alias b="bundle"
 alias be="bundle exec"
 
-alias memflush="echo 'flush_all' | nc localhost 11211"
-alias ttt="touch tmp/restart.txt"
-
 alias g="git"
 alias gl="git pull --prune"
-alias gr="git reflog | grep checkout | cut -w -f 8 | uniq | head -n 5"
 
-alias f="foreman start"
 alias rr="bin/rails routes | fzf"
 alias berc="bin/rails console"
 alias bers="bin/rails server"
