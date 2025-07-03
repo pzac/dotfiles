@@ -9,8 +9,7 @@
   {
     "context": "Editor",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-      "cmd-shift-r": "editor::CopyRelativePath",
+      "cmd-shift-r": "workspace::CopyRelativePath",
       "cmd-ctrl-r": "pane::RevealInProjectPanel",
       "cmd-alt-1": "pane::JoinAll",
       "cmd-k 1": ["workspace::MoveItemToPane", { "destination": 0 }],
