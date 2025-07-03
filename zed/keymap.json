@@ -16,7 +16,23 @@
       "cmd-k 1": ["workspace::MoveItemToPane", { "destination": 0 }],
       "cmd-k 2": ["workspace::MoveItemToPane", { "destination": 1 }],
       "cmd-k 3": ["workspace::MoveItemToPane", { "destination": 2 }],
-      "cmd-k 4": ["workspace::MoveItemToPane", { "destination": 3 }]
+      "cmd-k 4": ["workspace::MoveItemToPane", { "destination": 3 }],
+      "cmd-k alt-right": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" }
+      ],
+      "cmd-k alt-left": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" }
+      ],
+      "cmd-k alt-up": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "up" }
+      ],
+      "cmd-k alt-down": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "down" }
+      ]
     }
   }
 ]
