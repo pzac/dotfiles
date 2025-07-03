@@ -3,7 +3,6 @@ export DOTFILES_HOME=~/code/dotfiles
 source $DOTFILES_HOME/common/aliases
 source $DOTFILES_HOME/common/exports
 
-source $DOTFILES_HOME/zsh/colors.zsh
 source $DOTFILES_HOME/zsh/options.zsh
 source $DOTFILES_HOME/zsh/autocomplete.zsh
 # source $DOTFILES_HOME/zsh/history.zsh
