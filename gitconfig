@@ -49,7 +49,7 @@
     tool = opendiff
 [core]
     quotepath = false
-    excludesfile = /Users/pzac/.gitignore_global
+    excludesfile = ~/.gitignore_global
     # I hate less
     pager = cat
 [heroku]
