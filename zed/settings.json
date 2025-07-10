@@ -12,8 +12,7 @@
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet"
-    },
-    "version": "2"
+    }
   },
   "autosave": "on_focus_change",
   "buffer_font_family": "FantasqueSansM Nerd Font",
@@ -29,6 +28,10 @@
   },
   "features": {
     "edit_prediction_provider": "none"
+  },
+  "indent_guides": {
+    "active_line_width": 2,
+    "coloring": "indent_aware"
   },
   "languages": {
     "Ruby": {
@@ -49,6 +52,6 @@
     "diagnostics": false,
     "metrics": false
   },
-  "theme": "Gruvbox Dark",
+  "theme": "Ayu Light",
   "ui_font_family": "B612"
 }
