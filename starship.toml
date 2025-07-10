@@ -1,24 +1,24 @@
 format = """
 $directory\
-$git_status\
-$git_state\
-$git_branch\
+[(\\($git_branch$git_status$git_state\\) )](orange)\
 $character
 """
 
+palette = 'pzac'
+
 [directory]
-style = "160" # bright red
+style = "red"
 
 [character]
-success_symbol = "[»](226)" # bright yellow
-error_symbol = "[»](160)" # bright red
+success_symbol = "[»](yellow)"
+error_symbol = "[»](red)"
 
 [git_branch]
-format = '\([$branch]($style)\)'
-style = "214" # orange
+format = '[$branch]($style)'
+style = "orange"
 
 [git_status]
-format = "[{($conflicted$untracked$modified$staged$renamed$deleted)($ahead_behind)}](200)"
+format = '[ ($conflicted$untracked$modified$staged$renamed$deleted)($ahead_behind)](purple)'
 style = "cyan"
 conflicted = "C"
 untracked = "?"
@@ -32,3 +32,9 @@ behind = '-${count}'
 
 [git_state]
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
+
+[palettes.pzac]
+red = "160"
+yellow = "226"
+orange = "214"
+purple = "200"
